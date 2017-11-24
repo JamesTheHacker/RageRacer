@@ -1,0 +1,17 @@
+{
+  "name": "rage-racer",
+  "version": "0.0.2",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "rageracer": "./bin/rage-racer.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "args": "^3.0.7",
+    "jest": "^21.3.0-beta.9",
+    "node-fetch": "^1.7.3"
+  }
+}
