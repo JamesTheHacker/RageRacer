@@ -1,0 +1,11 @@
+{
+  "url": "https://requestb.in/q1zrf3q2",
+  "method": "POST",
+  "payload": "a=1&b=2&c=3",
+  "tries": 10,
+  "headers": {
+    "cookie": "username=lul&password=dank",
+    "user-agent": "DankBro"
+  },
+  "redirect": "manual"
+}

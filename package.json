@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "args": "^3.0.7",
-    "jest": "^21.3.0-beta.9",
     "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "jest": "^21.3.0-beta.9"
   }
 }
