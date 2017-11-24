@@ -1,5 +1,7 @@
 # 🚗 🏁 Rage Racer
 
+![rageracer in the terminal](https://i.imgur.com/jbZHkU6.png "rageracer in the terminal")
+
 **Experimental**: This is an experimental project. It works, but I am looking for feedback and help from the community to improve this tool.
 
 Rage Racer is an easy to use HTTP race condition testing tool. It fires off multiple requests instantly allowing you to test for race conditions in web applications.
@@ -47,7 +49,21 @@ Note: To send cookies include the cookie string with the headers.
 
     rageracer --config session.json
 
-Once complete Rage Racer returns a JSON string to STDOUT. This is useful for piping into files, or other software.
+Once complete Rage Racer returns the response data for each request in `json` format to `STDOUT`. Each request returns the following object:
+
+    {
+      "url": "...",
+      "body": "...",
+      "status": "...",
+      "headers": "..."
+    }
+
+* `url`: Response URL
+* `body`: Response body
+* `status`: Response status code
+* `headers`: Response headers
+
+This is useful for piping into files, or other software.
 
 ## TODO
 
