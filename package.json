@@ -1,7 +1,7 @@
 {
   "name": "rage-racer",
-  "version": "0.0.3",
-  "main": "index.js",
+  "version": "0.0.4",
+  "main": "./src/racer.js",
   "license": "MIT",
   "bin": {
     "rageracer": "./bin/rage-racer.js"
