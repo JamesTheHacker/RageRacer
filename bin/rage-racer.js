@@ -8,6 +8,6 @@ args
 
 const flags = args.parse(process.argv);
 racer.run(flags)
-  .then(results => JSON.stringify(results))
-  .then(results => console.log(results))
-  .catch(err => console.error(err));
+  .then(results => console.log(results.length))
+  //.then(results => console.log(results.length))
+  //.catch(err => console.error(err));

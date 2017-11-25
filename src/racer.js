@@ -16,7 +16,8 @@ module.exports.createRequests = (options, requestCount = 10) => {
   const requests = [];
   const { method, body, headers, redirect, url} = options;
 
-  const request = fetch(url, { method, body, headers, redirect })
+  for(let i=0; i < requestCount; i++) {
+    const request = fetch(url, { method, body, headers, redirect })
     .then(resp => resp.text()
       .then(body => {
         const { url, status, headers } = resp;
@@ -24,8 +25,6 @@ module.exports.createRequests = (options, requestCount = 10) => {
       })
     )
     .catch(err => console.error(err));
-
-  for(let i=0; i < requestCount; i++) {  
     requests.push(request);
   }
 
